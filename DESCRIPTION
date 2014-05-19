@@ -1,8 +1,14 @@
 Package: rXEDS
-Title: What the package does (short line)
+Title: Process X-ray EDS spectra from NIST DTSA-II and data cubes from NIST
+    Lispix
 Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (paragraph)
-Depends: R (>= 3.1.0)
-License: What license is it under?
+Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
+    "jrminter@gmail.com"))
+Author: John Minter <jrminter@gmail.com>
+Maintainer: John Minter <jrminter@gmail.com>
+Description: This package provides wrapper functions to process X-ray Energy
+    Dispersive Spectra (XEDS) from NIST DTSA-II and datacubes from NIST Lispix
+Depends:
+    R (>= 3.1.0)
+License: MIT
 LazyData: true
