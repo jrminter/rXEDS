@@ -9,6 +9,7 @@ Maintainer: John Minter <jrminter@gmail.com>
 Description: This package provides wrapper functions to process X-ray Energy
     Dispersive Spectra (XEDS) from NIST DTSA-II and datacubes from NIST Lispix
 Depends:
-    R (>= 3.1.0)
+    R (>= 3.1.0),
+    tcltk
 License: MIT
 LazyData: true
