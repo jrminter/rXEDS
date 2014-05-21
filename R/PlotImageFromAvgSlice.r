@@ -13,32 +13,6 @@
 #' @export
 #' 
 PlotImageFromAvgSlice <- function(x, ..., gamma=1.0){
-  # rot/flip from http://www1.maths.lth.se/help/R/image/
-  # Mirror matrix (left-right)
-  mirror.matrix <- function(x) {
-    xx <- as.data.frame(x)
-    xx <- rev(xx)
-    xx <- as.matrix(xx)
-    return(xx)
-  }
-  # Rotate matrix 180 clockworks
-  rotate180.matrix <- function(x) { 
-    xx <- rev(x)
-    dim(xx) <- dim(x)
-    return(xx)
-  }
-  # Flip matrix (upside-down)
-  flip.matrix <- function(x) {
-    xx <- mirror.matrix(rotate180.matrix(x))
-    return(xx)
-  }
-  
-  # Rotate matrix 90 clockworks
-  rotate90.matrix <- function(x) {
-    a <- t(mirror.matrix(x))
-    return(a) 
-  }
-  
   min <- min(x)
   max <- max(x)
   yLabels <- rownames(x)
