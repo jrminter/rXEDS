@@ -1,4 +1,4 @@
-#' Plot an image from a matrix of channels from an average slice of a  \code{DataCube} object
+#' Plot an image from a matrix of channels from an average slice of a \code{DataCube} object
 #'
 #' @param \code{x }The matrix.
 #' 
