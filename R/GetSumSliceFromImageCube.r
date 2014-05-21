@@ -1,6 +1,6 @@
 #' Get a sum slice from a vector of channels in  a  \code{DataCube} object
 #'
-#' @param \code{x }The datacube object.
+#' @param \code{x}The datacube object.
 #' 
 #' @param \code{ch} A vector of channels to average.
 #' 

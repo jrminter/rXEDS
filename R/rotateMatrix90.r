@@ -9,6 +9,7 @@
 #' @keywords keywords
 #'
 #' @export
+#' @include mirrorMatrix.r
 rotate90.matrix <- function(x) {
   a <- t(mirror.matrix(x))
   return(a) 

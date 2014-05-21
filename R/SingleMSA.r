@@ -1,15 +1,15 @@
 #' Read a single spectrum from a file and return a \code{Spectrum} object
 #'
-#' @param spec A fle path \code{spec}
+#' @param \code{spec} A file path 
 #' 
-#' @param probecur The probe current in nA
+#' @param \code{probecur} The probe current in nA
 #'
-#' @return msa A spectrum object
+#' @return \code{msa} A spectrum object
 #'
 #' @keywords keywords
 #'
 #' @export
-
+#' @include Spectrum.r
 SingleMSA <- function(spec=tk_choose.files(), probecur=1.0){
   msaHead <- read.table(spec,comment.char="&", fill=TRUE,
                         strip.white=FALSE, sep="", stringsAsFactors=FALSE,

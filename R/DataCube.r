@@ -25,6 +25,8 @@
 #' @name DataCube-class
 #' @rdname DataCube-class
 #' @exportClass DataCube
+#' @include ROI.r
+#' @include Spectrum.r
 setClass("DataCube",
          representation(data="array",
                         example.spec="Spectrum",
@@ -36,7 +38,7 @@ setClass("DataCube",
                         dwell.time="numeric",
                         pixel.spacing="numeric",
                         probecur="numeric",
- #                       roi="ROI",
+                        roi="ROI",
                         sum.images="array",
                         temp.frame="data.frame"),
          prototype=prototype(probecur=1.0,
