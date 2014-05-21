@@ -27,6 +27,7 @@ Collate:
     'SingleMSA.r'
     'flipMatrix.r'
     'imageDataCube.r'
+    'lookup.r'
     'mirrorMatrix.r'
     'plotDataCube.r'
     'plotSpectrum.r'
