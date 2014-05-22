@@ -2,7 +2,7 @@
 #'
 #' It is created by the SingleMSA function.  It assumes 20 keV 
 #' accelerating voltage and 10.0 nA of probe current unless
-#' otherwise specified.
+#' otherwise specified. From Jeff Davis at NIST
 #'
 #' \section{Slots}{
 #'   \describe{

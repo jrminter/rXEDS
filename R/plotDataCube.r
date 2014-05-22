@@ -1,6 +1,6 @@
-#' Plot a data cubes
+#' Plot a data cube
 #'
-#' Generic function to plot a data cube
+#' Generic function to plot a data cube. From Jeff Davis at NIST.
 #'
 #' @param x The Spectrum object \code{x}.
 #' 

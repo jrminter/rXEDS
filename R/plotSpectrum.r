@@ -1,5 +1,6 @@
 #' Plot an MSA spectrum
 #'
+#' From Jeff Davis at NIST
 #'
 #' @param x The Spectrum object \code{x}.
 #' 

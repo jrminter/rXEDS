@@ -3,7 +3,7 @@
 #' It contains a slot for an "example" spectrum, which can be used to
 #' set the calibration and meta-data for the data cube.  Values of probe
 #' current are in  nanoamps (nA), values of pixel spacing are micrometers
-#' per pixel (um/pix) and dwell time is in seconds (s).
+#' per pixel (um/pix) and dwell time is in seconds (s). From Jeff Davis at NIST.
 #'
 #' \section{Slots}{
 #'   \describe{

@@ -1,6 +1,6 @@
 #' The \code{"ROI"} class is used to set up a region of interest for simple integration and peak summing.
 #'
-#' It can be created by the ROI function or directly.
+#' It can be created by the ROI function or directly. From Jeff Davis at NIST
 #' 
 #' \section{Slots}{
 #'   \describe{

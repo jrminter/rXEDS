@@ -1,5 +1,7 @@
 #' Read a single spectrum from a file and return a \code{Spectrum} object
 #'
+#' From Jeff Davis at NIST
+#'
 #' @param \code{spec} A file path 
 #' 
 #' @param \code{probecur} The probe current in nA
