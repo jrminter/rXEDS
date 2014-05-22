@@ -1,18 +1,18 @@
-#' Plot an image from a matrix of channels from an average slice of a \code{DataCube} object
+#' Make an image from a matrix of channels from an average slice of a \code{DataCube} object
 #'
-#' @param \code{x }The matrix.
+#' @param \code{x} The matrix.
 #' 
-#' @param \code{gamma} A vector of channels to average.
+#' @param \code{gamma} The gamma for the grayscale, defaults to 1.0.
 #' 
 #' @param \code{...} Additional graphics parameters.
 #'
-#' @return \code{gamma} The gamma for the grayscale, defaults to 1.0.
+#' @return none
 #'
 #' @keywords keywords
 #'
 #' @export
 #' 
-PlotImageFromAvgSlice <- function(x, ..., gamma=1.0){
+MakeImageFromAvgSlice <- function(x, ..., gamma=1.0){
   min <- min(x)
   max <- max(x)
   yLabels <- rownames(x)

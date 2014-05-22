@@ -26,7 +26,7 @@
 #' @name Spectrum-class
 #' @rdname Spectrum-class
 #' @exportClass Spectrum
- 
+#' @include ROI.r
 setClass("Spectrum", 
          representation(title="character", npoints="numeric",
                         ncolumns="numeric", xunits="character",

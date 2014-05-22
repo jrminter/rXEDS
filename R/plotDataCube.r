@@ -14,8 +14,7 @@
 #' 
 #' @export
 #' @docType methods
-#' @rdname plot-methods
-#' 
+#' @rdname datacube-plot-methods
 setMethod("plot","DataCube", function(x,...,ch){
   if (x@record.by.image==FALSE){
     plot(t(x@data[ch,,]))

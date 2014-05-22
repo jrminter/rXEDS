@@ -1,7 +1,7 @@
 Package: rXEDS
 Title: Process X-ray EDS spectra from NIST DTSA-II and data cubes from NIST
     Lispix.
-Version: 0.1.2
+Version: 0.1.4
 Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
     "jrminter@gmail.com"))
 Author: John Minter <jrminter@gmail.com>
@@ -13,19 +13,22 @@ Description: This package provides wrapper functions to process X-ray Energy
     TO DO: figure out ROI in DataCube... Check some warnings from roxygen2...
 Depends:
     R (>= 3.1.0),
-    tcltk
+    tcltk,
+    rtiff
 License: MIT
 LazyData: true
 Collate:
-    'Spectrum.r'
     'ROI.r'
+    'Spectrum.r'
     'DataCube.r'
     'GetAvgSliceFromImageCube.r'
     'GetSumSliceFromImageCube.r'
-    'PlotImageFromAvgSlice.r'
+    'MakeImageFromAvgSlice.r'
+    'MakeAvgSlicePlots.r'
+    'flipMatrix.r'
+    'MakeAvgSliceTiff.r'
     'ReadDataCube.r'
     'SingleMSA.r'
-    'flipMatrix.r'
     'imageDataCube.r'
     'lookup.r'
     'mirrorMatrix.r'

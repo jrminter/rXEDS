@@ -15,9 +15,8 @@
 #' 
 #' @export
 #' @docType methods
-#' @rdname plot-methods
-#'
-setMethod("plot","Spectrum",function(x,...,yzoom=1,maxEnergy=10000){
+#' @rdname spectrum-plot-methods
+setMethod("plot", "Spectrum", function(x,...,yzoom=1,maxEnergy=10000){
   par(mfrow=c(1,1))
   xaxis=seq(from=-abs(x@offset),
             to=(x@npoints*x@xperchan-abs(x@offset)-x@xperchan),

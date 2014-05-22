@@ -15,7 +15,6 @@
 #' @export
 #' @docType methods
 #' @rdname plot-methods
-#' 
 setMethod("image", "DataCube", function(x,...,ch){
   if (x@record.by.image==FALSE){
     image(as.matrix(x@data[ch,,]),col=rainbow(16),useRaster=TRUE,axes=FALSE,main=paste("Channel",ch),sub=x@rawfile)
