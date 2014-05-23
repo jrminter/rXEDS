@@ -12,35 +12,6 @@ Description: This package provides wrapper functions to process X-ray Energy
     adapted to get it into a workable R package documented by roxygen2.
     TO DO: figure out ROI in DataCube... Check some warnings from roxygen2...
 Depends:
-<<<<<<< HEAD
     R (>= 3.1.0), tcltk, rtiff
 License: MIT
 LazyData: true
-
-=======
-    R (>= 3.1.0),
-    tcltk,
-    rtiff
-License: MIT
-LazyData: true
-Collate:
-    'ROI.r'
-    'Spectrum.r'
-    'DataCube.r'
-    'GetAvgSliceFromImageCube.r'
-    'GetSumSliceFromImageCube.r'
-    'MakeImageFromAvgSlice.r'
-    'MakeAvgSlicePlots.r'
-    'flipMatrix.r'
-    'MakeAvgSliceTiff.r'
-    'ReadDataCube.r'
-    'SingleMSA.r'
-    'imageDataCube.r'
-    'lookup.r'
-    'mirrorMatrix.r'
-    'plotDataCube.r'
-    'plotSpectrum.r'
-    'rXEDS-package.r'
-    'rotateMatrix180.r'
-    'rotateMatrix90.r'
->>>>>>> 64ab3c253348c0adbebd9d8564e8141001d90c38
