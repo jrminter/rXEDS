@@ -1,24 +1,24 @@
 #' Make AvgSlice and histogram plots from a matrix
 #'
-#' @param \code{mat} The matrix with the average slice to plot 
+#' @param mat The matrix with the average slice to plot 
 #' 
-#' @param \code{name} The base name for the plot
+#' @param name The base name for the plot
 #'
-#' @param \code{gamma} The gamma level for the grayscale. Defaults to 1.25
+#' @param gamma The gamma level for the grayscale. Defaults to 1.25
 #'
-#' @param \code{save.plots} A logical to save the plots. Defaults to FALSE.
+#' @param save.plots A logical to save the plots. Defaults to FALSE.
 #'
-#' @param \code{pdfDir} A directory for the pdf histogram. Defaults to ../pdf.
+#' @param pdfDir A directory for the pdf histogram. Defaults to ../pdf.
 #'
-#' @param \code{pdf.pts} The size for the pdf font. Defaults to 12.
+#' @param pdf.pts The size for the pdf font. Defaults to 12.
 #'
-#' @param \code{pngDir}  A directory for the png image plot. Defaults to ../png.
+#' @param pngDir  A directory for the png image plot. Defaults to ../png.
 #'
-#' @param \code{png.wid} The width of the png. Defaults to 640.
+#' @param png.wid The width of the png. Defaults to 640.
 #'
-#' @param \code{png.ht} The Height of the png. Defaults to 480.
+#' @param png.ht The Height of the png. Defaults to 480.
 #'
-#' @param \code{png.pts} Point size for the png. Defaults to 18.
+#' @param png.pts Point size for the png. Defaults to 18.
 #'
 #' @return two plots
 #'

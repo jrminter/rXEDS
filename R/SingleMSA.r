@@ -1,6 +1,6 @@
 #' SingleMSA
 #'
-#' Read a single spectrum from a file and return a \code{Spectrum} object
+#' Read a single spectrum from a file and return a Spectrum object
 #' From Jeff Davis at NIST
 #'
 #' @param spec A file path.

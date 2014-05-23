@@ -3,16 +3,16 @@
 #' Read in a hyperspectral data cube in the Lispix .raw/.rpl file format.
 #' From Jeff Davis at NIST
 #'
-#' @param rplFile A file path to a Lispix \code{.rpl} file. Defaults
+#' @param rplFile A file path to a Lispix .rpl file. Defaults
 #' to a file chooser.
 #' 
-#' @param data.what The data type. Defaults to \code{integer}.
+#' @param data.what The data type. Defaults to integer.
 #' 
-#' @param record.by.image A logical. Defaults to \code{TRUE}.
+#' @param record.by.image A logical. Defaults to TRUE.
 #' 
-#' @param example.spec A logical to load an example spec. Defaults to \code{TRUE}.
+#' @param example.spec A logical to load an example spec. Defaults to TRUE.
 #'
-#' @return  A datacube object
+#' @return A datacube object
 #'
 #' @keywords keywords
 #'

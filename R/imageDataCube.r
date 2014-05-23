@@ -2,7 +2,7 @@
 #'
 #' Generic function to create an image from a data cube channel
 #'
-#' @param x The Spectrum object \code{x}.
+#' @param x The Spectrum object x.
 #' 
 #' @param ... Additional graphical argument list.
 #'

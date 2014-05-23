@@ -6,7 +6,7 @@
 #' 
 #' @param ... Additional graphical argument list.
 #'
-#' @param \code{ch} An integer. The channel to plot.
+#' @param ch An integer. The channel to plot.
 #'
 #' @return A plot.
 #' 

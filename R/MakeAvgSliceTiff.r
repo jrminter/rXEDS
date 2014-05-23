@@ -2,11 +2,11 @@
 #'
 #' Useful for analysis in NIST Lispix
 #'
-#' @param \code{mat} The matrix with the average slice to convert 
+#' @param mat The matrix with the average slice to convert 
 #' 
-#' @param \code{name} The base name for the TIF file
+#' @param name The base name for the TIF file
 #'
-#' @param \code{tifDir} A directory for the pdf histogram. Defaults to ../tif.
+#' @param tifDir A directory for the pdf histogram. Defaults to ../tif.
 #'
 #' @return none
 #'
