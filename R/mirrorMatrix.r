@@ -1,10 +1,10 @@
-#' Mirror a maxtix.
+#' mirror.matrix
 #' 
 #' From http://www1.maths.lth.se/help/R/image/
 #'
-#' @param \code{x} input matrix.
+#' @param x input matrix.
 #'
-#' @return  The mirrored matrix
+#' @return The mirrored matrix
 #'
 #' @keywords keywords
 #'

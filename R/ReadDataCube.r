@@ -1,22 +1,24 @@
+#' ReadDataCube
+#' 
 #' Read in a hyperspectral data cube in the Lispix .raw/.rpl file format.
 #'
-#' @param \code{rplFile} A file path to a Lispix \code{.rpl} file. Defaults
+#' @param rplFile A file path to a Lispix \code{.rpl} file. Defaults
 #' to a file chooser.
 #' 
-#' @param \code{data.what} The data type. Defaults to \code{integer}.
+#' @param data.what The data type. Defaults to \code{integer}.
 #' 
-#' @param \code{record.by.image} A logical. Defaults to \code{TRUE}.
+#' @param record.by.image A logical. Defaults to \code{TRUE}.
 #' 
-#' @param \code{examplespec} A logical to load an example spec. Defaults to \code{TRUE}.
+#' @param example.spec A logical to load an example spec. Defaults to \code{TRUE}.
 #'
-#' @return  A datacube object object
+#' @return A datacube object object
 #'
 #' @keywords keywords
 #'
 #' @export
 ReadDataCube <- function(rplFile=tk_choose.files(caption="Choose RPL File"),
                          data.what="integer", record.by.image=TRUE,
-                         examplespec=TRUE){
+                         example.spec=TRUE){
   to.read <- file(rplFile,"rb")
   rpl <- read.table(rplFile,header=TRUE)
   pixelsX <- as.integer(as.character((rpl$value[which(rpl$key=="width")])))
@@ -41,7 +43,7 @@ ReadDataCube <- function(rplFile=tk_choose.files(caption="Choose RPL File"),
     dim(Data) <- mydim
   }
   myexample <- new("Spectrum")
-  if (examplespec==TRUE){
+  if (example.spec==TRUE){
     myexample <- SingleMSA(spec=tk_choose.files(caption="Choose an example .msa file for this datacube"))
   }
   final<-new("DataCube", data=Data, example.spec=myexample, dimensions=mydim, 

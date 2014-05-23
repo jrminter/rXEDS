@@ -1,4 +1,4 @@
-#' Plot a data cubes
+#' Plot a data cube
 #'
 #' Generic function to plot a data cube
 #'
@@ -14,7 +14,7 @@
 #' 
 #' @export
 #' @docType methods
-#' @rdname plot-methods
+#' @rdname data-cube-plot-methods
 #' 
 setMethod("plot","DataCube", function(x,...,ch){
   if (x@record.by.image==FALSE){

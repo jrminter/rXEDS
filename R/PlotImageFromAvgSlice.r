@@ -1,12 +1,12 @@
+#' PlotImageFromAvgSlice
+#' 
 #' Plot an image from a matrix of channels from an average slice of a \code{DataCube} object
 #'
-#' @param \code{x }The matrix.
+#' @param x The matrix.
 #' 
-#' @param \code{gamma} A vector of channels to average.
-#' 
-#' @param \code{...} Additional graphics parameters.
+#' @param ... Additional graphics parameters.
 #'
-#' @return \code{gamma} The gamma for the grayscale, defaults to 1.0.
+#' @return gamma The gamma for the grayscale, defaults to 1.0.
 #'
 #' @keywords keywords
 #'

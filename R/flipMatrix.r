@@ -2,9 +2,9 @@
 #' 
 #' From http://www1.maths.lth.se/help/R/image/
 #'
-#' @param \code{x} input matrix.
+#' @param x Input matrix.
 #'
-#' @return  The rotated matrix
+#' @return The rotated matrix
 #'
 #' @keywords keywords
 #'

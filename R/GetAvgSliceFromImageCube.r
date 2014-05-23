@@ -1,12 +1,14 @@
+#' GetAvgSliceFromImageCube
+#'
 #' Get an average slice from a vector of channels in  a  \code{DataCube} object
 #'
-#' @param \code{x}The datacube object.
+#' @param x The datacube object.
 #' 
-#' @param \code{ch} A vector of channels to average.
+#' @param ch A vector of channels to average.
 #' 
-#' @param \code{debug} A logical to print info. Default \code{FALSE}.
+#' @param debug A logical to print info. Default \code{FALSE}.
 #'
-#' @return \code{msa} A numeric matrix (ct/ch).
+#' @return msa A numeric matrix (ct/ch).
 #'
 #' @keywords keywords
 #'

@@ -1,12 +1,14 @@
+#' GetSumSliceFromImageCube
+#' 
 #' Get a sum slice from a vector of channels in  a  \code{DataCube} object
 #'
-#' @param \code{x}The datacube object.
+#' @param x The datacube object.
 #' 
-#' @param \code{ch} A vector of channels to average.
+#' @param ch A vector of channels to average.
 #' 
-#' @param \code{debug} A logical to print info. Default \code{FALSE}.
+#' @param debug A logical to print info. Default \code{FALSE}.
 #'
-#' @return \code{msa} An integer matrix (total cts/ch).
+#' @return msa An integer matrix (total cts/ch).
 #'
 #' @keywords keywords
 #'

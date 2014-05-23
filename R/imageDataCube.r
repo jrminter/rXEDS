@@ -1,4 +1,4 @@
-#' Plot a data cubes
+#' Plot a data cube image
 #'
 #' Generic function to create an image from a data cube channel
 #'
@@ -6,7 +6,7 @@
 #' 
 #' @param ... Additional graphical argument list.
 #'
-#' @param \code{ch} An integer. The channel to plot.
+#' @param ch An integer. The channel to plot.
 #'
 #' @return A plot.
 #' 
@@ -14,7 +14,7 @@
 #' 
 #' @export
 #' @docType methods
-#' @rdname plot-methods
+#' @rdname image-methods
 #' 
 setMethod("image", "DataCube", function(x,...,ch){
   if (x@record.by.image==FALSE){

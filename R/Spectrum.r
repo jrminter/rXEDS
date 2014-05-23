@@ -1,32 +1,33 @@
+#' Class "Spectrum" 
+#'
 #' The \code{"Spectrum"} class creates the primary object for EDS data.
 #'
 #' It is created by the SingleMSA function.  It assumes 20 keV 
 #' accelerating voltage and 10.0 nA of probe current unless
 #' otherwise specified.
 #'
-#' \section{Slots}{
-#'   \describe{
-#'     \item{title}{A character string title.}
-#'     \item{npoints}{An integer specifying the number of points.}
-#'     \item{xunits}{A string, typically 'eV'.}
-#'     \item{xperchan}{A numeric, typically '10.0'.}
-#'     \item{offset}{A numeric, zero offset.}
-#'     \item{beamkv}{A numeric, beam kv.}
-#'     \item{probecur}{A numeric, probe current in nA.}
-#'     \item{livetime}{A numeric, live time in sec.}
-#'     \item{realtime}{A numeric, real time in sec.}
-#'     \item{spectrum}{A vector of data values.}
-#'     \item{composition}{A numeric, composition?.}
-#'     \item{elements}{A string.}
-#'     \item{net.counts}{A numeric, net counts.}
-#'     \item{identity}{A character, whatever.}
-#'     \item{position}{A numeric, specimen psoition.}
-#'   }
-#' }
+#' @aliases Spectrum-class
+#' @docType class
 #' @name Spectrum-class
 #' @rdname Spectrum-class
+#'
+#' @slot title A character string title.
+#' @slot npoints An integer specifying the number of points.
+#' @slot xunits A string, typically 'eV'.
+#' @slot xperchan A numeric, typically '10.0'.
+#' @slot offset A numeric, zero offset.
+#' @slot beamkv A numeric, beam kv.
+#' @slot probecur A numeric, probe current in nA.
+#' @slot livetime A numeric, live time in sec.
+#' @slot realtime A numeric, real time in sec.
+#' @slot spectrum A vector of data values.
+#' @slot composition A numeric, composition?.
+#' @slot elements An array.
+#' @slot net.counts A numeric, net counts.
+#' @slot identity A character, whatever.
+#' @slot position A numeric, specimen position.
+#'
 #' @exportClass Spectrum
- 
 setClass("Spectrum", 
          representation(title="character", npoints="numeric",
                         ncolumns="numeric", xunits="character",

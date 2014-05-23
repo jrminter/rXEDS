@@ -1,10 +1,12 @@
+#' SingleMSA
+#'
 #' Read a single spectrum from a file and return a \code{Spectrum} object
 #'
-#' @param \code{spec} A file path 
+#' @param spec A file path.
 #' 
-#' @param \code{probecur} The probe current in nA
+#' @param probecur The probe current in nA.
 #'
-#' @return \code{msa} A spectrum object
+#' @return A spectrum object
 #'
 #' @keywords keywords
 #'

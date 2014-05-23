@@ -1,10 +1,12 @@
+#' lookup
+#'
 #' Search for row numbers in a data frame that most closely match value
 #' 
 #' A helper function
 #'
-#' @param \code{mydata} input data frame
+#' @param mydata Input data frame
 #' 
-#' @param \code{value} to find.
+#' @param value to find.
 #'
 #' @return The row number that most closely matches
 #'

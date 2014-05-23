@@ -15,7 +15,7 @@
 #' 
 #' @export
 #' @docType methods
-#' @rdname plot-methods
+#' @rdname spectrum-plot-methods
 #'
 setMethod("plot","Spectrum",function(x,...,yzoom=1,maxEnergy=10000){
   par(mfrow=c(1,1))
