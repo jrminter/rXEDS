@@ -38,7 +38,7 @@ make.avg.slice.plots <- function(mat, name, gamma=1.25,
     # create the directory if it does not exist
     dir.create(pngDir, showWarnings = FALSE, recursive = TRUE)
     pngFile <- paste0(pngDir, '/', name, '.png' )
-    png(file=pngFile, width=png.wid, height=png.ht, pointsize = png.pts)
+    png(filename=pngFile, width=png.wid, height=png.ht, pointsize = png.pts)
     MakeImageFromAvgSlice(flip.matrix(rotate90.matrix(mat)),
                           gamma=gamma, title=name)
     dev.off()
