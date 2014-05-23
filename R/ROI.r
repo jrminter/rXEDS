@@ -10,9 +10,9 @@
 #' @name ROI-class
 #' @rdname ROI-class
 #' 
-#' @slot elements A character string of elements.}
-#' @slot start A vector of starting.}
-#' @slot end A vector of ending.}
+#' @slot elements A character string of elements.
+#' @slot start A vector of starting.
+#' @slot end A vector of ending.
 #'
 #' @exportClass ROI
 setClass("ROI",
