@@ -1,18 +1,46 @@
 Package: rXEDS
 Title: Process X-ray EDS spectra from NIST DTSA-II and data cubes from NIST
     Lispix.
-Version: 0.1.2
+Version: 0.1.5
 Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
     "jrminter@gmail.com"))
 Author: John Minter <jrminter@gmail.com>
 Maintainer: John Minter <jrminter@gmail.com>
 Description: This package provides wrapper functions to process X-ray Energy
-    Dispersive Spectra (XEDS) from NIST DTSA-II and datacubes from NIST Lispix.
-    This was adapted from some code from Jeff Davis at NIST to get it into a
-    workable R package.
+    Dispersive Spectra (XEDS) from NIST DTSA-II and data cubes from NIST Lispix.
+    This was adapted from pre-release code from Jeff Davis at NIST (for microR),
+    adapted to get it into a workable R package documented by roxygen2.
     TO DO: figure out ROI in DataCube... Check some warnings from roxygen2...
 Depends:
+<<<<<<< HEAD
     R (>= 3.1.0), tcltk, rtiff
 License: MIT
 LazyData: true
 
+=======
+    R (>= 3.1.0),
+    tcltk,
+    rtiff
+License: MIT
+LazyData: true
+Collate:
+    'ROI.r'
+    'Spectrum.r'
+    'DataCube.r'
+    'GetAvgSliceFromImageCube.r'
+    'GetSumSliceFromImageCube.r'
+    'MakeImageFromAvgSlice.r'
+    'MakeAvgSlicePlots.r'
+    'flipMatrix.r'
+    'MakeAvgSliceTiff.r'
+    'ReadDataCube.r'
+    'SingleMSA.r'
+    'imageDataCube.r'
+    'lookup.r'
+    'mirrorMatrix.r'
+    'plotDataCube.r'
+    'plotSpectrum.r'
+    'rXEDS-package.r'
+    'rotateMatrix180.r'
+    'rotateMatrix90.r'
+>>>>>>> 64ab3c253348c0adbebd9d8564e8141001d90c38

@@ -6,13 +6,15 @@
 #' 
 #' @param ... Additional graphics parameters.
 #'
-#' @return gamma The gamma for the grayscale, defaults to 1.0.
+#' @param gamma Gamma for grayscale. Defaults to 1.
+#'
+#' @return none
 #'
 #' @keywords keywords
 #'
 #' @export
 #' 
-PlotImageFromAvgSlice <- function(x, ..., gamma=1.0){
+MakeImageFromAvgSlice <- function(x, ..., gamma=1.0){
   min <- min(x)
   max <- max(x)
   yLabels <- rownames(x)

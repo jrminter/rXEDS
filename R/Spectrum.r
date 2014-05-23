@@ -4,7 +4,7 @@
 #'
 #' It is created by the SingleMSA function.  It assumes 20 keV 
 #' accelerating voltage and 10.0 nA of probe current unless
-#' otherwise specified.
+#' otherwise specified. From Jeff Davis at NIST
 #'
 #' @aliases Spectrum-class
 #' @docType class
@@ -28,6 +28,7 @@
 #' @slot position A numeric, specimen position.
 #'
 #' @exportClass Spectrum
+#' @include ROI.r
 setClass("Spectrum", 
          representation(title="character", npoints="numeric",
                         ncolumns="numeric", xunits="character",

@@ -1,5 +1,6 @@
 #' Plot an MSA spectrum
 #'
+#' From Jeff Davis at NIST
 #'
 #' @param x The Spectrum object \code{x}.
 #' 
@@ -17,7 +18,7 @@
 #' @docType methods
 #' @rdname spectrum-plot-methods
 #'
-setMethod("plot","Spectrum",function(x,...,yzoom=1,maxEnergy=10000){
+setMethod("plot", "Spectrum", function(x,...,yzoom=1,maxEnergy=10000){
   par(mfrow=c(1,1))
   xaxis=seq(from=-abs(x@offset),
             to=(x@npoints*x@xperchan-abs(x@offset)-x@xperchan),
