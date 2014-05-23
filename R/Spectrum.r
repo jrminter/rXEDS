@@ -13,6 +13,7 @@
 #'
 #' @slot title A character string title.
 #' @slot npoints An integer specifying the number of points.
+#' @slot ncolumns Number of columns.
 #' @slot xunits A string, typically 'eV'.
 #' @slot xperchan A numeric, typically '10.0'.
 #' @slot offset A numeric, zero offset.
