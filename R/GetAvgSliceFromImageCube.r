@@ -20,13 +20,14 @@ GetAvgSliceFromImageCube <- function(x, ch, debug=FALSE){
     print(ch[1])
   }
   mat <- as.matrix(x@data[,,ch[1]])
+  storage.mode(mat) <- "numeric"
   for(i in 2:length(ch)){
     theCh <- ch[i]
     tmp <- as.matrix(x@data[,, theCh])
+    storage.mode(tmp) <- "numeric"
     mat <- mat + tmp
   }
-  # change to a float and average
-  storage.mode(mat) <- "numeric"
+  # compute the average average
   mat <- mat/as.numeric(length(ch))
   return(mat)
 }
