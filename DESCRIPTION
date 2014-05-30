@@ -30,6 +30,7 @@ Collate:
     'MakeAvgSliceTiff.r'
     'ReadDataCube.r'
     'SingleMSA.r'
+    'getChanInt.r'
     'imageDataCube.r'
     'lookup.r'
     'mirrorMatrix.r'
