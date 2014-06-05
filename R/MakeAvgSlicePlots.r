@@ -38,6 +38,7 @@ make.avg.slice.plots <- function(mat, name, gamma=1.25,
     # create the directory if it does not exist
     dir.create(pngDir, showWarnings = FALSE, recursive = TRUE)
     pngFile <- paste0(pngDir, '/', name, '.png' )
+    if(file.exists(pngFile)) file.remove(pngFile)
     png(filename=pngFile, width=png.wid, height=png.ht, pointsize = png.pts)
     MakeImageFromAvgSlice(flip.matrix(rotate90.matrix(mat)),
                           gamma=gamma, title=name)
@@ -50,6 +51,7 @@ make.avg.slice.plots <- function(mat, name, gamma=1.25,
     # create the directory if it does not exist
     dir.create(pdfDir, showWarnings = FALSE, recursive = TRUE)
     pdfFile <- paste0(pdfDir, '/', name, '-hist.pdf' )
+    if(file.exists(pdfFile)) file.remove(pdfFile)
     Sys.sleep(0.1)
     d.cur <- dev.cur()
     dev.copy2pdf(device=d.cur, file="temp.pdf", useDingbats=TRUE,

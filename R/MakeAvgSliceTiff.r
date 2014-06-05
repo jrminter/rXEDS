@@ -18,6 +18,7 @@ make.avg.slice.tif <- function(mat, name, tifDir='../tif'){
   # create the directory if it does not exist
   dir.create(tifDir, showWarnings = FALSE, recursive = TRUE)
   tifFile <- paste0(tifDir, '/', name, '.tif' )
+  if(file.exists(tifFile)) file.remove(tifFile)
   writeTiff(flip.matrix(rotate90.matrix(mat)), tifFile)
 }
 
