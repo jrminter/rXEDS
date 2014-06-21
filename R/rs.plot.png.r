@@ -26,8 +26,10 @@ rs.plot.png <- function(pltFn, strFile, width=7.5, height=5, pts=16, dpi=100){
   dev.next()
   pngDir <- "../png"
   if (!file.exists(pngDir)) dir.create(pngDir, showWarnings = FALSE)
-  if(file.exists(strFile)) file.remove(strFile)
-  Sys.sleep(0.5)
+  if(file.exists(strFile)) {
+    file.remove(strFile)
+    Sys.sleep(2.0)
+  }
   png(file=strFile, width=width*dpi, height=height*dpi, pointsize=pts)
   pltFn
   dev.off()

@@ -30,8 +30,10 @@ rs.plot.pdf <- function(pltFn, strFile, width=9, height=6, pts=12){
       useDingbats=TRUE)
   pltFn
   dev.off()
-  if(file.exists(strFile)) file.remove(strFile)
-  Sys.sleep(0.2)
+  if(file.exists(strFile)){
+    file.remove(strFile)
+    Sys.sleep(2.0)
+  }
   str.cmd <- sprintf("pdfcrop --margins 10 temp.pdf %s",
                      strFile)
   system(str.cmd)
