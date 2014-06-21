@@ -1,7 +1,7 @@
 Package: rXEDS
 Title: Process X-ray EDS spectra from NIST DTSA-II and data cubes from NIST
     Lispix.
-Version: 0.1.8
+Version: 0.1.9
 Authors@R: c(person("John", "Minter", role = c("aut", "cre","ths"), email =
     "jrminter@gmail.com"))
 Author: John Minter <jrminter@gmail.com>
@@ -9,8 +9,9 @@ Maintainer: John Minter <jrminter@gmail.com>
 Description: This package provides wrapper functions to process X-ray Energy
     Dispersive Spectra (XEDS) from NIST DTSA-II and data cubes from NIST Lispix.
     This was adapted from pre-release code from Jeff Davis at NIST (for microR),
-    adapted to get it into a workable R package documented by roxygen2.
-    TO DO: figure out ROI in DataCube... Check some warnings from roxygen2...
+    adapted to get it into a workable R package documented by roxygen2. It
+    also adds some convenience functions. TO DO: figure out ROI in DataCube...
+    Check some warnings from roxygen2...
 Depends:
     R (>= 3.1.0),
     tcltk,
@@ -39,3 +40,5 @@ Collate:
     'rXEDS-package.r'
     'rotateMatrix180.r'
     'rotateMatrix90.r'
+    'rs.plot.pdf.r'
+    'rs.plot.png.r'
