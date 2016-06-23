@@ -42,3 +42,4 @@ Collate:
     'rotateMatrix90.r'
     'rs.plot.pdf.r'
     'rs.plot.png.r'
+RoxygenNote: 5.0.1
